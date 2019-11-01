@@ -40,7 +40,13 @@ class Home extends Component {
     }
 
     static navigationOptions = {
-        title: 'Home'
+        title: 'Home',
+        headerStyle: {
+            backgroundColor: '#512DA8',
+          },
+          headerTitleStyle: {
+            color: "#fff"            
+        }
     };
 
 
