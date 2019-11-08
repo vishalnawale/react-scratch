@@ -2,18 +2,27 @@ import React, { Component } from 'react';
 import { View,ScrollView ,FlatList,Text} from 'react-native';
 import { ListItem } from 'react-native-elements';
 
-import { LEADERS } from './shared/leaders';
+import { connect } from 'react-redux';
+import {baseUrl} from './shared/baseUrl';
 
+
+ const mapStatetoProps = state =>{
+
+    return{
+        leaders:state.leaders
+    }
+}
+  
 
 
 class AboutUs extends Component{
 
-    constructor(props){
-        super(props);
-        this.state={
-            leaders:LEADERS
-        };
-    }
+    // constructor(props){
+    //     super(props);
+    //     this.state={
+    //         leaders:LEADERS
+    //     };
+    // }
 
     static navigationOptions = {
         title: 'AboutUs',
@@ -58,7 +67,7 @@ class AboutUs extends Component{
                           Corporate Leaderships
                     </Text>
                 <FlatList
-            data={this.state.leaders}
+            data={this.props.leaders.leaders}
             renderItem={RenderMenuItem }
             keyExtractor={item=>item.id.toString()}>
 
@@ -72,4 +81,4 @@ class AboutUs extends Component{
 
 }
 
-export default AboutUs;
+export default connect(mapStatetoProps) (AboutUs);

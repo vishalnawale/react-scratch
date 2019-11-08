@@ -1,5 +1,5 @@
 import * as ActionTypes from './ActionTypes';
-import {baseUrl} from '../shared/baseUrl'
+import { baseUrl } from '../components/shared/baseUrl'
 import { leaders } from './leaders';
 
 
