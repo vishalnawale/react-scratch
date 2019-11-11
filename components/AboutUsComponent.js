@@ -47,6 +47,7 @@ class AboutUs extends Component{
                      key={index}
                      title={item.name}
                       subtitle={item.description}
+                      leftAvatar={{source: {uri: baseUrl + item.image}}}
                        hideChevron={true}
                        />
               </View>

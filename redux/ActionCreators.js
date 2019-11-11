@@ -1,9 +1,9 @@
 import * as ActionTypes from './ActionTypes';
 import { baseUrl } from '../components/shared/baseUrl'
-import { leaders } from './leaders';
 
 
-export const fetchComments=()=>(dispatch)=>{
+
+export const fetchComments = ()=>(dispatch)=>{
     return fetch (baseUrl+'comments')
     .then(response =>{
         if(response.ok){

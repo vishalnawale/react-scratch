@@ -21,10 +21,10 @@ const mapstateToProps = state =>{
 }
 
 const mapDispatchToProps= dispatch => ({
-  fetchDishes : (dispatch) =>dispatch(fetchDishes()),
-  fetchPromos : (dispatch) =>dispatch(fetchPromos()),
-  fetchComments : (dispatch) =>dispatch(fetchComments()),
-  fetchLeaders : (dispatch) =>dispatch(fetchLeaders()),
+  fetchDishes : () =>dispatch(fetchDishes()),
+  fetchPromos : () =>dispatch(fetchPromos()),
+  fetchComments : () =>dispatch(fetchComments()),
+  fetchLeaders : () =>dispatch(fetchLeaders()),
 });
 
 
