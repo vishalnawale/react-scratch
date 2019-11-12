@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import {ConfigureStore} from './redux/configureStore';
 
 const store = ConfigureStore();
-
+// json-server --host 192.168.0.107 db.json
 export default class App extends React.Component{
   render (){
     return (
