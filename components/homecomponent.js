@@ -66,6 +66,8 @@ class Home extends Component {
 
 
     render() {
+
+        const { navigate } = this.props.navigation;
         return(
             <ScrollView>
                <RenderItem item={this.props.dishes.dishes.filter((dish) => dish.featured)[0]}
