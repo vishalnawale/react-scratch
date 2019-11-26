@@ -30,9 +30,6 @@ class  Menu extends Component {
 
     render(){
         const renderMenuItem = ({item, index}) => {
-
-           
-
             return (
                     <Tile
                         key={index}
